@@ -86,7 +86,7 @@ inner join
   inner join
   (
     select distinct path,
-    				count(path) as views_sum
+                    count(path) as views_sum
     from log
     group by path
     order by views_sum desc
